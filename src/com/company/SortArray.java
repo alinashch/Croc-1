@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class SortArray {
     public static int [] SortArray(int arr[]){
         int [] result=new int[arr.length];
-        for (int out = arr.length - 1; out >= 1; out--){
-            for (int in = 0; in < out; in++){
-                if(arr[in] > arr[in + 1])
-                    ChangeElement(arr, in, in + 1);
+        for (int i = arr.length - 1; i >= 1; i--){
+            for (int j = 0; j < i; j++){
+                if(arr[j] > arr[j + 1])
+                    ChangeElement(arr, j, j + 1);
             }
         }
         return result;
